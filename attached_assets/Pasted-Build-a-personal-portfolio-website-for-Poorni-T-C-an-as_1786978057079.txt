@@ -1,0 +1,67 @@
+Build a personal portfolio website for Poorni T C, an aspiring Software Developer.
+
+TECH STACK
+- React + Vite + Tailwind CSS
+- Deployable as a static site
+
+DESIGN DIRECTION
+- Minimal, clean, Flat Design 2.0 (semi-flat) aesthetic
+- Top navbar layout (reference Brittany Chiang's portfolio for structure only, not colors/theme)
+- Light theme as default, with a light/dark mode toggle
+- IMPORTANT: content elements (navbar, headings, cards, text, buttons) stay completely static/fixed in place — no floating or drifting content
+- IMPORTANT: only the BACKGROUND should be dynamic/animated — e.g. a subtle animated gradient mesh, slowly moving blobs/particles, or soft shifting shapes behind the content. Background motion should be smooth, low-opacity, non-distracting, and pause/reduce motion respectfully (prefers-reduced-motion support)
+- Section-level scroll effects (fade/slide in on scroll) are fine for content, but no whole-page parallax
+
+SECTIONS & CONTENT
+
+1. Hero
+   - Name: Poorni T C
+   - Title: Aspiring Software Developer
+   - Short intro: Software developer with hands-on internship experience in full-stack development and QA, strong CS foundation, and a track record of building responsive web apps
+   - Location: Hosur, India
+   - CTA buttons: View Projects, Contact Me
+   - Links: LinkedIn, GitHub, Email (poornitc2003@gmail.com), Phone (+91 9626297180)
+
+2. About
+   - B.E. Computer Science & Engineering, Adhiyamaan College of Engineering, Hosur (2022–2026), CGPA 8.11/10
+   - Languages: English (Professional), Tamil (Bilingual), Sourashtra (Native)
+
+3. Skills (grouped, static grid/cards — no animation on the icons themselves)
+   - Frontend: React, HTML5, CSS3, JavaScript, Bootstrap
+   - Backend: Node.js, Express.js, Java, Python, JWT
+   - Databases: MongoDB Atlas, Mongoose, PostgreSQL, SQL Workbench
+   - Soft Skills: Teamwork, Communication, Problem-Solving, Active Listening
+
+4. Projects (card layout, each with title, tech tags, 2-3 bullet points, optional GitHub/live links)
+   - RemitPulse — React, Vite, Tailwind CSS, Node.js, Express, MongoDB Atlas, NVIDIA API
+     • Full-stack financial/remittance app with React/Vite/Tailwind frontend and Node/Express backend
+     • MongoDB Atlas via Mongoose ODM with Atlas Vector Search for document management and querying
+     • NVIDIA Build API (nv-embed-v1, nemotron-mini-4b-instruct) for embeddings and AI-driven reasoning
+   - Efficient Empty Returns (Smart Logistics Platform) — HTML, CSS, JavaScript, PHP, MySQL
+     • On-demand booking system to reduce waste from underutilized empty-return vehicles
+     • Improved vehicle utilization, cut operational costs, supported sustainability
+
+5. Experience (timeline or stacked cards)
+   - Software Testing Intern, Aatral Technologies India Pvt Ltd, Bangalore (Jan 2026 – Mar 2026)
+     • Manual functional testing on an enterprise procurement platform
+     • Documented test cases, tracked bugs, reported issues to dev team
+     • Researched AI features across modules
+   - Backend Developer Intern, Sisesoft IT Solutions, Hosur (Jun 2025 – Jul 2025)
+     • Designed and implemented secure server-side logic and database operations
+     • Built and integrated REST APIs for data exchange across web apps
+
+6. Certifications (simple list)
+   - Complete Java Programming Bootcamp — Udemy
+   - Design for Delight: Mastering Figma & Adobe XD — Make Labs
+   - Dynamic Web Design, Development & Hosting — Infochord Technology Pvt. Ltd
+
+7. Contact
+   - Email, phone, LinkedIn, GitHub
+   - Simple contact form (name, email, message) — static layout, no motion
+
+TECHNICAL REQUIREMENTS
+- Fully responsive (mobile, tablet, desktop)
+- Semantic HTML, accessible (proper alt text, contrast, focus states)
+- Background animation implemented via CSS (keyframes) or a lightweight canvas/SVG approach — must not tank performance or scroll smoothness
+- Clean component structure: Navbar, Hero, About, Skills, Projects, Experience, Certifications, Contact, Footer
+- Theme toggle persists via React state (no localStorage dependency issues if deploying to restricted environments)

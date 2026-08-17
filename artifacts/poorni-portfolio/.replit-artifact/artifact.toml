@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Poorni T C — Portfolio"
+description = "A polished personal portfolio for Poorni T C, an aspiring software developer with full-stack development and QA experience."
+version = "1.0.0"
+id = "artifacts/poorni-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23556
+
+[services.development]
+run = "pnpm --filter @workspace/poorni-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/poorni-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/poorni-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23556"
+BASE_PATH = "/"
