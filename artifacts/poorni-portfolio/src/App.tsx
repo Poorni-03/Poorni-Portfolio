@@ -10,7 +10,6 @@ import {
   MapPin,
   Menu,
   Moon,
-  Phone,
   Send,
   Sun,
   X,
@@ -360,9 +359,6 @@ function App() {
               <div className="contact-details">
                 <a className="contact-detail" href="mailto:poornitc2003@gmail.com" data-testid="link-email">
                   <Mail size={16} aria-hidden="true" /> poornitc2003@gmail.com
-                </a>
-                <a className="contact-detail" href="tel:+919626297180" data-testid="link-phone">
-                  <Phone size={16} aria-hidden="true" /> +91 9626297180
                 </a>
                 <a className="contact-detail" href="https://www.linkedin.com/in/poornitc" target="_blank" rel="noreferrer" data-testid="link-linkedin">
                   <Linkedin size={16} aria-hidden="true" /> LinkedIn
