@@ -1,6 +1,6 @@
 [build]
-  command = "pnpm install && pnpm run build"
-  publish = "dist/public"
+  command = "pnpm --filter poorni-portfolio run build"
+  publish = "artifacts/poorni-portfolio/dist/public"
 
 [build.environment]
   NODE_ENV = "production"
