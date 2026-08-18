@@ -1,5 +1,5 @@
 [build]
-  command = "pnpm --filter poorni-portfolio run build"
+  command = "pnpm install && pnpm run build"
   publish = "dist/public"
 
 [build.environment]
